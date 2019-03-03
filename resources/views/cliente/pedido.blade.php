@@ -16,7 +16,7 @@
             <input type="button" id="confirmar" value="Confirmar" data-id="{{$pedido->id}}" class="btn btn-success"/>
         @endif
 
-        @if ((isset($item_pedido) && count($item_pedido) > 0 && ($item_pedido[0]->statusitem_id == 1 || $item_pedido[0]->statusitem_id == 6 || $item_pedido[0]->statusitem_id == null)) || count($item_pedido) == 0)
+        @if ((isset($item_pedido) && count($item_pedido) > 0 && ($item_pedido[0]->statusitem_id == 1 || $item_pedido[0]->statusitem_id == 6 || $item_pedido[0]->statusitem_id == null)) || !isset($item_pedido))
         <form action="/cliente/newitem" method="POST">
             {{ csrf_field() }}
             <input type="hidden" name="pedido_id" value="{{$pedido->id}}"/>

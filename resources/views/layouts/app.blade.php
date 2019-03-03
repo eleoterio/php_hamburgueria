@@ -142,31 +142,27 @@
           display: inline-block;
           border-radius: 50%;
         }
+        .navbar-brand {
+          color: white;
+        }
     </style>
   </head>
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
       <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <div class="navbar-content" style="width: 100%">
           <a class="navbar-brand" href="./admin">Hamburgueria</a>
-          <a class="navbar-brand"  href="./">Logout</a>
-        </div>
-       
+          <a class="navbar-brand" style="float: right;" href="./">Logout</a>
+        </div>       
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
+        <div class="col-sm-3 col-md-2 sidebar ">
+          <ul class="nav nav-sidebar ">
             <li><a href="/pedidos">Pedidos </a></li> 
             <li><a href="/produtos">Produto </a></li>
             <li><a href="/usuarios">Usuarios </a></li>      
